@@ -1,0 +1,43 @@
+<div class = "containier">
+
+    <div class="jumbotron">
+        <h1>Burgers</h1>
+        <h2>Order and Create Your Favorite Burgers</h2>
+
+        <panel>
+            <form class = "create-form">
+                <div class="form-group">
+                    <label for="newBurger">Order Burger:
+                    </label>
+                    <input type="text" id="burgerName" name="burger">
+                </div>
+            </form>
+        </panel>
+    </div>
+
+
+    <p>Burger no devoured</p>
+
+    <ul>
+        {{#each burgers}}
+        {{#unless devoured}}
+        <li>{{burger_name}}
+            <button class="btn change-burger" data-id={{id}}></button>
+        </li>
+    {{/unless}}
+    {{/each}}
+    </ul>
+
+
+      <p>Burger  devoured</p>
+
+    <ul>
+        {{#each burgers}}
+        {{#if devoured}}
+        <li>{{burger_name}}</li>
+    {{/if}}
+    {{/each}}
+    </ul>
+</div>
+
+// bootstrap (row / cols /  buttons)
