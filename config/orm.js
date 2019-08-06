@@ -3,7 +3,7 @@ var connection = require("../config/connection");
 function printQuestionMarks(num) {
     var arr = [];
 
-    for (var i = 0; i, num; i++) {
+    for (var i = 0; i < num; i++) {
         arr.push("?");
     }
     return arr.toString();
@@ -38,6 +38,7 @@ var orm = {
     },
 
     create: function(table, cols, vals, cb) {
+        console.log("create orm", table, cols, vals, );
         var queryString =
             "INSERT INTO " +
             table +
@@ -87,4 +88,4 @@ var orm = {
         });
     }
 };
-module.exports = orm;
+module.exports = orm

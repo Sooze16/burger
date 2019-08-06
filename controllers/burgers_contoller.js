@@ -1,3 +1,4 @@
+console.log("controller loaded")
 var express = require("express");
 
 var router = express.Router();
@@ -5,6 +6,7 @@ var router = express.Router();
 var burger = require("../models/burger");
 
 router.get("/", function(req, res) {
+
 
     burger.selectAll(function(data) {
         var hdbrsObject = {
@@ -17,17 +19,21 @@ router.get("/", function(req, res) {
 });
 
 router.post("/api/burgers", function(req, res) {
+    console.log(req.body)
+
     burger.create(["burger_name", "devoured"],
 
-        [req.body.burgerName, req.body.devoured],
+        [req.body.burgerName, false],
         function(result) {
-            res.json({ id: results.insertId });
+
+            res.json({ id: result.insertId });
         }
 
     );
 });
 
 router.put("api/burgers/:id", function(req, res) {
+    console.log("router");
     var condition = "id = " + req.params.id;
 
     console.log("condition", condition);
@@ -59,4 +65,4 @@ router.delete("api/burgers/:id", function(req, res) {
     });
 });
 
-module.exports = router;
+module.exports = router;.
