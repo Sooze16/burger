@@ -13,26 +13,26 @@
         background-image: url(../images/BBurgers.jpg);
         /* background-repeat: no-repeat; */
         background-size: 100% 100%;
-        padding-bottom: 10%;
-        padding-top: 20%;
+        /* padding-bottom: 5%;
+        padding-top: 3%; */
         margin-bottom: 0%;
         /* font-display: bold; */
     }
     
     h1 {
         font-family: bobsburgers;
-        font-size: 100px;
-        position: absolute;
-        left: 50px;
-        top: 10px;
+        font-size: 75px;
+        /* position: absolute; */
+        /* left: 50px;
+        top: 10px; */
     }
     
     h2 {
         font-family: bobsburgers;
         font-size: 60px;
-        position: absolute;
+        /* position: absolute;
         left: 93px;
-        top: 175px;
+        top: 175px; */
     }
     
     .card-heading {
@@ -50,6 +50,22 @@
         font-weight: bold;
     }
     
-    body {
+    .container {
+        margin: 0 auto;
+        height: auto;
         border: 7px solid rgb(99, 150, 101);
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: #ffffff;
+    }
+    
+    body {
+        background: url(../images/fast-food-hamburger-meal-background-vector-14198158.jpg);
+    }
+    
+    footer {
+        background-color: rgb(99, 150, 101);
+        font-family: bobsburgers;
+        font-size: 25px;
+        margin-bottom: 20px;
     }
