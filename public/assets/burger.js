@@ -37,14 +37,15 @@ $(function() {
     $(".eatBurger").on("click", function(event) {
         console.log("eat");
         var id = $(this).data("id");
+        console.log(id, '<-- this is id')
         var devouredState = {
             devoured: true
         };
+        console.log(devouredState, "<-- devouredState")
 
-        $.ajax("api/burgers/" + id, {
+        $.ajax("/api/burgers/" + id, {
             type: "PUT",
             data: devouredState
-
 
         }).then(function() {
             console.log("Burger devoured");
@@ -53,7 +54,7 @@ $(function() {
 
     });
 
-    $(".delete-burger").on("click", function(event) {
+    $(".trashBurger").on("click", function(event) {
 
 
         var id = $(this).data("id");
@@ -62,7 +63,7 @@ $(function() {
         $.ajax("/api/burgers/" + id, {
             type: "DELETE"
         }).then(
-            function() {
+            function(data) {
                 console.log("deleted burger", id);
                 // Reload the page to get the updated list
                 location.reload();
