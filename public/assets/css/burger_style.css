@@ -1,3 +1,55 @@
-body {
-    background-image: url(../images/7-73546_hamburger-clip-art-web-clipart-transparent-background-burger.png);
-}
+    @font-face {
+        font-family: bobsburgers;
+        src: url(../css/Bob\'s\ Burgers.ttf);
+    }
+    
+    .form-control {
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+    }
+    
+    .jumbotron {
+        background-image: url(../images/BBurgers.jpg);
+        /* background-repeat: no-repeat; */
+        background-size: 100% 100%;
+        padding-bottom: 10%;
+        padding-top: 20%;
+        margin-bottom: 0%;
+        /* font-display: bold; */
+    }
+    
+    h1 {
+        font-family: bobsburgers;
+        font-size: 100px;
+        position: absolute;
+        left: 50px;
+        top: 10px;
+    }
+    
+    h2 {
+        font-family: bobsburgers;
+        font-size: 60px;
+        position: absolute;
+        left: 93px;
+        top: 175px;
+    }
+    
+    .card-heading {
+        font-family: bobsburgers;
+        font-size: 40px;
+        background-color: rgb(99, 150, 101);
+        text-align: center;
+        letter-spacing: 5px;
+    }
+    
+    .create-form {
+        font-family: sans-serif;
+        color: darkorange;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    body {
+        border: 7px solid rgb(99, 150, 101);
+    }

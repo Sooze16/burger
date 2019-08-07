@@ -1,35 +1,28 @@
-<div class="container" id="main">
+<div class="container">
 
-    {{!-- <div class="jumbotron"> --}}
-        <h1>Eat Da Burger!!! </h1>
+    <div class="jumbotron">
+        <h1>Eat-Da-Burger! </h1>
         
-        <p>Orders for Pickup.</p>
+       
         <br>
-        <h2>Select or Create Your Burger</h2>
+        <h2>Create Your Burger</h2>
         <card>
             <form class="create-form">
                 <div class="form-group">
-                    <label for="newburger">Order Fresh Burger</label>
-                    <input type="text" id="newburger" name="burger">
+                    <label for="newburger" >ORDER HERE</label>
+                    <input type="text" class="form-control-sm" id="newburger" name="burger">
 
-                    {{!-- <select data-placeholder="" id="newburger" name="burger">
-                        <option value="Nothing Selected" selected>Please Select a Burger</option>
-                        <option value="Hamburger">Hamburger</option>
-                        <option value="CheeseBurger">CheeseBurger</option>
-                        <option value="VeggieBurger">Veggie Burger</option>
-                    </select> --}}
-                
 
-                    <button  class="btn btn-success" id="addburger">Add Burger</button>
+                    <button type="submit"  class="btn btn-success" id="addburger"><span class="fa fa-thumbs-up"></span></button>
                 </div>
             </form>
         </card>
-    {{!-- </div> --}}
+    </div>
     <div class="row">
         <div class="col-sm-6">
             <div class="card card-default">
-                <div class="card-heading" id="leftside"><strong>Order Your Burger</strong>
-                    <p>Send order to cashier when ready for pick up</p>
+                <div class="card-heading" id="leftside"><strong>Pay Cashier Here!</strong>
+                    
                 </div>
                 <div class="card-body">
 
@@ -50,8 +43,8 @@
         </div>
         <div class="col-sm-6">
             <div class="card card-default">
-                <div class="card-heading" id="rightside"><strong>Burger is Ready for Pick Up</strong>
-                    <p>Remove order from pick up when delivered</p>
+                <div class="card-heading" id="rightside"><strong>Burger is Ready for Pick Up!</strong>
+                    
                 </div>
                 <div class="card-body">
                     <ul>
@@ -59,7 +52,7 @@
                         {{#if devoured}}
                         <span><strong> {{this.id}} - {{this.burger_name}}</strong></span>
                         <button type="button" class="trashBurger btn btn-danger" id="trashButton" data-id="{{this.id}}"
-                            data-newDevoured="{{devour}}"><span class="fa fa-trash"></span></button>
+                            data-newDevoured="{{devour}}"><span class="fa fa-cutlery"></span></button>
                         <hr>
                         {{/if}}
                         {{/each}}
