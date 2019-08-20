@@ -3,9 +3,8 @@
 
 <img src =".\public\assets\images\st,small,215x235-pad,210x230,f8f8f8.lite-1u2.jpg>
 
-  * [Live]
+  * ![Live](https://susan-burger1-live.herokuapp.com/)
 
-  https://susan-burger1-live.herokuapp.com/
 
   
 
@@ -34,7 +33,7 @@ This project uses MySQL, Node, Express, Handlebars, ORM (Object Relational Mappe
 ### Screen Shots:
 
 ## Acknowledgments 
-* Jumbotron artwork copywrite Bob's Burgers - Fox Entertainment.  Used for educational purposes.
+* Jumbotron artwork copywrite Bob's Burgers - Fox Entertainment.  Used only for educational purposes.
 
   
   
