@@ -3,8 +3,7 @@
 
 <img src =".\public\assets\images\st,small,215x235-pad,210x230,f8f8f8.lite-1u2.jpg>
 
-  * ![Live](https://susan-burger1-live.herokuapp.com/)
-
+## Live: (https://susan-burger1-live.herokuapp.com/)
 
   
 
@@ -32,8 +31,24 @@ This project uses MySQL, Node, Express, Handlebars, ORM (Object Relational Mappe
 
 ### Screen Shots:
 
+
+#### Enter the burger you would like to order in the "order here" text field. Click "thumbs up" if that is what you would like.
+![img1](./public/assets/images/Img1.PNG)
+
+#### The order will go to the cashier box - click on the payment icon when ready.  
+![img1](./public/assets/images/Img2.PNG)
+
+
+#### The burger will go to the pick up window.
+
+![img1](./public/assets/images/Img3.PNG)
+
+#### Click on the cutlery icon to pick up your burger and the order will be removed. YUM!
+
+![img1](./public/assets/images/Img4.PNG)
+
 ## Acknowledgments 
-* Jumbotron artwork copywrite Bob's Burgers - Fox Entertainment.  Used only for educational purposes.
+* Jumbotron artwork copywrite Bob's Burgers - Fox Entertainment.  Used for educational purposes ONLY.
 
   
   
