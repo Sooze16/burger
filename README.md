@@ -1,7 +1,7 @@
 # Eat-Da-Burger
 <p> Homework for week 14 of NU Bootcamp.  A full stack, MVC(Mode-View-Controller) application utilizing (POST) requests to create your burger and (GET) requests to choose that burger and (DELETE) to pick up that burger once ready or "devoured". </p>
 
-<img src =".\public\assets\images\st,small,215x235-pad,210x230,f8f8f8.lite-1u2.jpg>
+![BURGER](./public/assets/images/thick-burger-vector.jpg)
 
 ## Live: (https://susan-burger1-live.herokuapp.com/)
 
